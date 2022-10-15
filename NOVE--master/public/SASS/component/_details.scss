@@ -1,0 +1,47 @@
+.details{
+    width: 100%;
+    margin: auto;
+    padding-top: 115px;
+    background-color: $grey;
+
+    .details-section{
+        padding-top: 40px;
+        width: 65%;
+        height: 800px;
+        margin: auto;
+
+
+        .details__title{
+            @include section-title;
+    
+            height: 50px;
+            margin-bottom: 143px;
+            padding-left: 16px;
+            border-left: 6px solid $blue-600;
+
+        }
+    
+        .details__desc{
+            display: flex;
+    
+            .details__description{
+                width: 90%;
+                margin-right: 10%;
+                font-size: $paragraphe;     
+                letter-spacing: .5%;
+                color: $black-400;
+            }
+    
+            .details__images-avant{
+                position: relative;
+                z-index: 3;
+            }
+            .details__images-arriere{
+                position: relative;
+                top: -550px;
+                left: 100px;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,21 @@
+.nav{
+
+    &__logo:hover{
+        transform: scale(1.2);
+        transition: .5s;
+    }
+
+    
+    .nav__item a:hover{
+        color: $blue-600;
+        transition: .5s;
+    }
+
+    
+    .nav__button:hover{
+        @include hover-cta;
+        
+        color: $blue-500;
+        transition: .5s;
+    }
+}

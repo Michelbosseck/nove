@@ -1,0 +1,99 @@
+.projet{
+    padding-top: 50px;
+    width: 100%;
+    background-color: $white-section;
+
+    .projet-section{
+        width: 65%;
+        margin: auto;
+
+        .projet__title{
+            position: relative;
+            @include section-title;
+    
+            z-index: 3;
+        }
+
+        .projet__title_big-heading{
+            position: relative;
+            font-size: $big-heading;
+            font-weight: $Bold;
+            top: -200px;
+            left: -230px;
+            color: $big-heading-color;
+        }
+
+        .projet__item{
+            display: flex;
+            margin-bottom: 70px;
+
+            .projet__item-image{
+                position: relative;
+
+                .projet__image{
+                    display: block;
+                }
+
+                .projet__image--overlay{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    top: 275px;
+                    left: 0;
+                    width: 40%;
+                    height: 10%;
+                    background: black;
+                    color: white;
+                }
+            }
+
+            .projet__item-desc{
+                position: relative;
+                width: 50%;
+                margin-left: 10%;
+
+                .projet__item-number{
+                    position: absolute;
+                    font-size: $big-heading;
+                    font-weight: $Bold;
+                    top: -20%;
+                    left: -5%;
+                    color: $big-heading-color;
+                }
+
+                .projet__item-title{
+                    position: relative;
+                    color: $blue-900;
+                    font-size: $intermediate;
+                    padding: 50px 0;
+                    padding-top: 70px;
+                    padding-bottom: 30px;
+                    z-index: 4;
+                }
+
+                .projet__item-description{
+                    position: relative;
+                    color: $black-800;
+                    font-weight: $Medium;
+                    line-height: 1.33rem;
+                    margin-bottom: 1.5rem;
+                }
+
+                .projet__item-button{
+                    @include cta;
+
+                    border: 2px solid $blue-500;
+                    width: 164px;
+                    height: 45px;
+                    font-size: $small;
+                    font-weight: $Medium;
+                    color: $white-title;
+                    text-transform: uppercase;
+                    cursor: pointer;
+                    transition: .5s;
+                }
+            }
+        }
+    }
+}

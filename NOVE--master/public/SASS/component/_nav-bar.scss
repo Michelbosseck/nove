@@ -1,0 +1,57 @@
+@import '../variables/variables',
+        '../utilities/utilities';
+
+.nav{
+    width: 85%;
+    height: 78px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo{
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    &__list{
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .nav__links{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .nav__item a{
+                font-size: $middle;
+                font-weight: $Regular;
+                color: $black-300;
+                transition: .5s;
+            }
+
+            .nav__item--active a{
+                color: $blue-600;
+                font-weight: $Bold
+            }
+
+            .nav__button{
+                @include cta;
+    
+                border: 2px solid $blue-500;
+                width: 164px;
+                height: 45px;
+                font-size: $small;
+                font-weight: $Medium;
+                color: $white-title;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: .5s;
+            }
+        }
+
+    }
+}

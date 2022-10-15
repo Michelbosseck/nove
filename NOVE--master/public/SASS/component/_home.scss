@@ -1,0 +1,57 @@
+.home{
+    width: 100%;
+    height: 90vh;
+    position: relative;
+
+    .home__image{
+        height: 100%;
+    }
+
+    .home__image--overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        background: $overlay;
+        color: white;
+
+        .home__uptitle--overlay{
+            font-size: $middle;
+            font-weight: $Bold;
+            color: $blue-300;
+            // margin-top: 181px;
+            margin-left: 241px;
+            padding-left: 16px;
+            border-left: 4px solid $blue-50;
+        }
+
+        .home__uptitle--overlay::before{
+            content: '';
+            top: 0;
+            left: 10px;
+            width: 8px;
+            height: 40px;
+            right: 16px;
+            color: white;
+        }
+
+        .home__title--overlay{
+            margin-top: 52px;
+            font-size: $big;
+            font-weight: $Bold;
+            margin-left: 234px;
+            width: 626px;
+            height: 220px;
+        }
+
+        .home__caroussel--overlay{
+            position: absolute;
+            background-color: white;
+        }
+    }
+}

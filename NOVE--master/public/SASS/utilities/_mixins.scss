@@ -1,0 +1,20 @@
+@import '../variables/variables';
+
+@mixin cta {
+    background-color: $blue-500;
+    font-size: $small;
+    font-weight: $Medium;
+}
+
+@mixin section-title {
+    color: $blue-900;
+    font-size: $titre;
+    font-weight: $Bold;
+    text-transform: uppercase;
+}
+
+@mixin hover-cta {
+    background-color: $white-section;
+    font-size: $small;
+    font-weight: $Medium;
+}

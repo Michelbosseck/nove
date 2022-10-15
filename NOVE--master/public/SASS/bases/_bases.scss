@@ -1,0 +1,26 @@
+@import '../variables/variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $Montserrat, $fall-back;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100%;
+}
+
+ul, ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a, li{
+    text-decoration: none;
+}
